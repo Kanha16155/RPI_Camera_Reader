@@ -17,10 +17,4 @@ while (count < 100):
 		count +=1
 	#if key == ord("r"):
 		#break
-  
-# Destroys all of the HighGUI windows. 
 cv2.destroyAllWindows() 
-  
-# release the captured frame 
-
- 
