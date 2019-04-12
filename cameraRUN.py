@@ -15,7 +15,7 @@ t = time.time() # start timer
 time.sleep(0.1) #waits for camera to turn on
 
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True): #capture is continous as long as camera is running
-	image = frame.array #converts captured array to an image
+	image = frame.array #converts captured image to an array
 	#cv2.imshow("response", image) #not showing images saves ~1 sec of total capturing time
 	cv2.imwrite("pictures/frame" + str(count) + ".jpg", image) # not saving images saves ~3 secs of total capturing time
 	#key = cv2.waitKey(1) & 0xFF #only use if video stream is continous
